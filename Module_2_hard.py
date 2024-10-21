@@ -1,8 +1,8 @@
 def find_password(n):
     result = ""
     for d in range(1, n + 1):
-        if n % d == 0: 
-            for i in range(1, d):
+        if n % d == 0:
+            for i in range(1, d // 2 + 1):
                 j = d - i
                 if i < j and n % (i + j) == 0:
                     result += str(i) + str(j)
